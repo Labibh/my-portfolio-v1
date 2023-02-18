@@ -61,6 +61,75 @@ const AboutStyled = styled.div`
     --amount: 5;
     --fill: #3d3d3d;
   }
+  
+  @media (min-width: 541px) {
+    .grid-wrapper {
+      grid-template-rows: 0.3fr 0.2fr 0.5fr;
+      width: 80%;
+    }
+
+    .header-text {
+      padding-top: 3vh;
+    }
+
+    .blob-container {
+      padding-top: 10vh;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .grid-wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 240px 300px;
+      grid-template-areas: 
+      "heading blob"
+      "about blob";
+      padding-top: 14%;
+    }
+
+    .header-text {
+      grid-area: heading;
+    }
+    
+    h1 {
+      margin: 0 0 17px 20px;
+      font-size: calc(32px + 0.83vw);
+    }
+
+    .about-me-text {
+      grid-area: about;
+    }
+
+    .about-me-text > p {
+      font-size: calc(8px + 0.83vw);
+    }
+
+    .blob-container {
+      grid-area: blob;
+    }
+
+    .tk-blob {
+      margin-bottom: 20%;
+    }
+
+    .tk-blob-1 {
+      width: 20vw;
+    }
+
+    .tk-blob-2 {
+      width: 18vw;
+    }
+
+    .tk-blob-3 {
+      width: 14vw;
+  }
+
+    @media (min-width: 3000px) {
+      .grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+      }
+    }
 `
 
 const About = (props) => {
@@ -68,7 +137,7 @@ const About = (props) => {
         <AboutStyled id="about">
             <Wrapper>
                 <div className="grid-wrapper">
-                    <div>
+                    <div className="header-text">
                         <h1>Hi,<br/>I'm Labib Haque<br/>a Web Developer</h1>
                     </div>
                     <div className="about-me-text">

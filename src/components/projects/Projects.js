@@ -10,7 +10,6 @@ const ProjectsStyled = styled.div`
   .grid-wrapper {
     grid-template-rows: auto repeat(3, 665px);
     grid-row-gap: 15px;
-    //background-color: cadetblue;
   }
 
   h2 {
@@ -111,6 +110,36 @@ const ProjectsStyled = styled.div`
   .tech-used-text {
     font-weight: 600;
   }
+
+  @media (min-width: 541px) {
+    .grid-wrapper {
+      width: 65%;
+      grid-row-gap: 25px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 430px);
+      grid-column-gap: 50px;
+      grid-template-rows: auto;
+      grid-row-gap: 0;
+      width: auto;
+    }
+    
+    .heading-text {
+      display: none;
+    }
+
+    .project-blocks {
+      align-self: center;
+    }
+
+    .project-card-grid {
+      height: 800px;
+    }
+  }
 `
 
 const Projects = (props) => {
@@ -118,7 +147,7 @@ const Projects = (props) => {
         <ProjectsStyled id="projects">
             <Wrapper>
                 <div className="grid-wrapper">
-                    <div>
+                    <div className="heading-text">
                         <h2>Projects</h2>
                     </div>
                     <div className="project-blocks">
