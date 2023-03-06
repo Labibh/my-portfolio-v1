@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Wrapper from "../wrapper/Wrapper";
 import LTimg from "./LT.png";
 import SPNimg from "./SPN.png";
-import TGEimg from "./TGE.png";
+import FNFimg from "./FNF.png";
 
 const ProjectsStyled = styled.div`
   .grid-wrapper {
@@ -50,7 +50,7 @@ const ProjectsStyled = styled.div`
   }
 
   .project-img-3 {
-    background-image: url(${TGEimg});
+    background-image: url(${FNFimg});
   }
 
   .project-card-title {
@@ -67,27 +67,27 @@ const ProjectsStyled = styled.div`
     font-weight: 400;
     color: var(--simple-white);
   }
-  
+
   .button-1 {
-      display: inline-block;
-      box-sizing: border-box;
-      height: 30px;
-      line-height: 26px;
-      margin-left: 10px;
-      padding: 0 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-      white-space: nowrap;
-      border: 2px solid #ffffff;
-      font-family: var(--font-family-Roboto-Slab);
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 26px;
+    margin-left: 10px;
+    padding: 0 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    border: 2px solid #ffffff;
+    font-family: var(--font-family-Roboto-Slab);
   }
-  
+
   .button-1:hover {
     border: 2px solid var(--font-brown-1);
   }
-  
+
   .repo-button {
     background: #0466c8;
   }
@@ -101,7 +101,7 @@ const ProjectsStyled = styled.div`
     padding: 16px;
     border-radius: 0 0 0 15px;
   }
-  
+
   .project-card-text > p {
     font-family: var(--font-family-Roboto-Slab);
     font-size: 16px;
@@ -116,6 +116,14 @@ const ProjectsStyled = styled.div`
       width: 65%;
       grid-row-gap: 25px;
     }
+
+    .project-card-text {
+      padding: 18px;
+    }
+
+    .project-card-text > p {
+      font-size: 18px;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -127,7 +135,7 @@ const ProjectsStyled = styled.div`
       grid-row-gap: 0;
       width: auto;
     }
-    
+
     .heading-text {
       display: none;
     }
@@ -155,15 +163,16 @@ const Projects = (props) => {
                             <div className="project-card-img project-img-2"></div>
                             <div className="project-card-title">
                                 <h3>SolarPowerNow</h3>
-                                <a href="#" className="button-1 repo-button">Repo</a>
-                                <a href="#" className="button-1 live-button">Live</a>
+                                <a href="https://github.com/Labibh/SolarPowerNow" target="_blank" rel="noreferrer" className="button-1 repo-button">Repo</a>
+                                <a href="https://labibh.github.io/SolarPowerNow/" target="_blank" rel="noreferrer" className="button-1 live-button">Live</a>
                             </div>
                             <div className="project-card-text">
                                 <p className="tech-used-text">Technology used: HTML5, CSS3, JavaScript</p>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Semper auctor neque vitae
-                                    tempus quam pellentesque nec nam aliquam. Vel risus commodo viverra maecenas
-                                    accumsan lacus vel facilisis volutpat. Ultrices in iaculis nunc sed augue lacus
-                                    viverra vitae. Est velit egestas dui id ornare arcu odio.</p>
+                                <p>Designed and developed SolarPowerNow, a website catering to a fictional organization
+                                    that promotes and advocates for renewable energy, specifically solar power. The site
+                                    features a news section, a learning section, an interactive dashboard and a donation
+                                    page. Visitors will understand the benefits of solar energy and support the
+                                    movement. </p>
                             </div>
                         </div>
                     </div>
@@ -172,15 +181,15 @@ const Projects = (props) => {
                             <div className="project-card-img project-img-1"></div>
                             <div className="project-card-title">
                                 <h3>Labib Tutors</h3>
-                                <a href="#" className="button-1 repo-button">Repo</a>
-                                <a href="#" className="button-1 live-button">Live</a>
+                                <a href="https://github.com/Labibh/LabibTutors" target="_blank" rel="noreferrer" className="button-1 repo-button">Repo</a>
+                                <a href="https://labibh.github.io/LabibTutors/" target="_blank" rel="noreferrer" className="button-1 live-button">Live</a>
                             </div>
                             <div className="project-card-text">
-                                <p className="tech-used-text">Technology used: React, node.js</p>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Semper auctor neque vitae
-                                    tempus quam pellentesque nec nam aliquam. Vel risus commodo viverra maecenas
-                                    accumsan lacus vel facilisis volutpat. Ultrices in iaculis nunc sed augue lacus
-                                    viverra vitae. Est velit egestas dui id ornare arcu odio.</p>
+                                <p className="tech-used-text">Technology used: React, styled-components, node.js</p>
+                                <p>Developed and maintained a personal static website built with React.js, branded
+                                    LabibTutors, to promote and grow my freelance tutoring business. The site is a
+                                    responsive single page app, with all styling implemented using the tool
+                                    styled-components.</p>
                             </div>
                         </div>
                     </div>
@@ -188,16 +197,15 @@ const Projects = (props) => {
                         <div className="project-card-grid">
                             <div className="project-card-img project-img-3"></div>
                             <div className="project-card-title">
-                                <h3>Web Escape</h3>
-                                <a href="#" className="button-1 repo-button">Repo</a>
-                                <a href="#" className="button-1 live-button">Live</a>
+                                <h3>Flip-and-Find</h3>
+                                <a href="https://github.com/tenzinwoz/memory-game" target="_blank" rel="noreferrer" className="button-1 repo-button">Repo</a>
+                                <a href="https://tenzinwoz.github.io/memory-game/" target="_blank" rel="noreferrer" className="button-1 live-button">Live</a>
                             </div>
                             <div className="project-card-text">
                                 <p className="tech-used-text">Technology used: HTML5, CSS3, JavaScript</p>
-                                <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Semper auctor neque vitae
-                                    tempus quam pellentesque nec nam aliquam. Vel risus commodo viverra maecenas
-                                    accumsan lacus vel facilisis volutpat. Ultrices in iaculis nunc sed augue lacus
-                                    viverra vitae. Est velit egestas dui id ornare arcu odio.</p>
+                                <p>Created a card-based memory web game with a team of three people. The game featured
+                                    advanced HTML DOM manipulation, sophisticated logic and a creative design.
+                                    Collaboration tool GitHub was used to version control and manage our code.</p>
                             </div>
                         </div>
                     </div>

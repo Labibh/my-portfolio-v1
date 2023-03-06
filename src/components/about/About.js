@@ -61,7 +61,7 @@ const AboutStyled = styled.div`
     --amount: 5;
     --fill: #3d3d3d;
   }
-  
+
   @media (min-width: 541px) {
     .grid-wrapper {
       grid-template-rows: 0.3fr 0.2fr 0.5fr;
@@ -90,7 +90,7 @@ const AboutStyled = styled.div`
     .header-text {
       grid-area: heading;
     }
-    
+
     h1 {
       margin: 0 0 17px 20px;
       font-size: calc(32px + 0.83vw);
@@ -122,7 +122,7 @@ const AboutStyled = styled.div`
 
     .tk-blob-3 {
       width: 14vw;
-  }
+    }
 
     @media (min-width: 3000px) {
       .grid-wrapper {
@@ -142,9 +142,9 @@ const About = (props) => {
                     </div>
                     <div className="about-me-text">
                         <p>
-                            I build stunning websites with rich user experiences. Experienced in developing for both
-                            frontend and backend, and can adapt to any technology stack. I am always learning and
-                            improving my skills, so that I can deliver a better end product.
+                            I build stunning websites with rich user experiences. Experienced in developing for the
+                            front-end, and can adapt to any technology stack. I am always learning and improving my
+                            skills, so that I can deliver a better end product.
                         </p>
                     </div>
                     <div className="blob-container">

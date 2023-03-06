@@ -101,11 +101,11 @@ const SkillsStyled = styled.div`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1350px) {
     .grid-wrapper-small {
       display: none;
     }
-    
+
     .grid-wrapper-big {
       width: 85%;
       margin-top: 5%;
@@ -122,12 +122,12 @@ const SkillsStyled = styled.div`
       grid-template-columns: repeat(6, 1fr);
       grid-column-gap: 1.80vw;
     }
-    
+
     .skill-blocks {
       padding: 0;
     }
-    
-    
+
+
     .skill-blocks-small {
       display: block;
       padding: 0;
@@ -150,12 +150,12 @@ const SkillsStyled = styled.div`
     .skill-card-grid {
       grid-template-rows: 160px 160px;
       height: 100%;
-      
+
     }
   }
 
   @media (min-width: 3000px) {
-    
+
     .skill-grid-img-1 > div > svg {
       height: 3vw;
     }
@@ -166,7 +166,7 @@ const SkillsStyled = styled.div`
 const Skills = (props) => {
     return (
         <SkillsStyled id="skills">
-            <Wrapper className="main-wrapper">
+            <Wrapper>
                 <div className="grid-wrapper grid-wrapper-small">
                     <div>
                         <h2>Skills</h2>
@@ -210,9 +210,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
-                                    exercitation ullamco laboris.</p>
+                                <p>Experienced in <b>HTML, CSS and JavaScript</b> with a deep understanding of web
+                                    development concepts and best practices.</p>
                             </div>
                         </div>
                     </div>
@@ -231,8 +230,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p>Skilled in <b>React</b> framework with experience in building complex UI components,
+                                    managing state using Redux, and integrating with backend APIs.</p>
                             </div>
                         </div>
                     </div>
@@ -255,8 +254,9 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p>Proficient in <b>Angular</b> framework for building scalable web applications using
+                                    features such as two-way data binding, routing, and component-based architecture.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -271,8 +271,7 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Utilize <b>Git</b> for version control, and GitHub to manage Git repositories</p>
                             </div>
                         </div>
                         <div className="skill-card-grid">
@@ -285,8 +284,7 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Build server-side applications and APIs with <b>Node.js</b></p>
                             </div>
                         </div>
                     </div>
@@ -303,8 +301,7 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Expertise in static typing and object-oriented programing with <b>TypeScript</b></p>
                             </div>
                         </div>
                         <div className="skill-card-grid">
@@ -318,8 +315,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Using <b>Sass</b> to create maintainable CSS with variables, mixins and nested rules
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -335,8 +332,7 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Develop scalable and performant NoSQL database solutions with <b>MongoDB</b></p>
                             </div>
                         </div>
                         <div className="skill-card-grid">
@@ -354,8 +350,7 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1 skill-grid-text-small">
-                                <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                    Vel.</p>
+                                <p>Design and implement efficient relational databases using <b>MySQL</b></p>
                             </div>
                         </div>
                     </div>
@@ -400,8 +395,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                <p>Experienced in <b>HTML, CSS and JavaScript</b> with a deep understanding of web
+                                    development concepts and best practices.</p>
                             </div>
                         </div>
                     </div>
@@ -420,8 +415,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p>Skilled in <b>React</b> framework with experience in building complex UI components,
+                                    managing state using Redux, and integrating with backend APIs.</p>
                             </div>
                         </div>
                     </div>
@@ -444,8 +439,8 @@ const Skills = (props) => {
                                 </div>
                             </div>
                             <div className="skill-grid-text-1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p>Proficient in <b>Angular</b> framework for building scalable web applications using
+                                    features such as two-way data binding, routing, and component-based architecture.</p>
                             </div>
                         </div>
                     </div>
@@ -461,8 +456,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Utilize <b>Git</b> for version control, and GitHub to manage Git repositories</p>
                                 </div>
                             </div>
                         </div>
@@ -477,8 +471,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Build server-side applications and APIs with <b>Node.js</b></p>
                                 </div>
                             </div>
                         </div>
@@ -495,8 +488,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Expertise in static typing and object-oriented programing with <b>TypeScript</b></p>
                                 </div>
                             </div>
                         </div>
@@ -512,8 +504,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Using <b>Sass</b> to create maintainable CSS with variables, mixins and nested rules</p>
                                 </div>
                             </div>
                         </div>
@@ -529,8 +520,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Develop scalable and performant NoSQL database solutions with <b>MongoDB</b></p>
                                 </div>
                             </div>
                         </div>
@@ -550,8 +540,7 @@ const Skills = (props) => {
                                     </div>
                                 </div>
                                 <div className="skill-grid-text-1 skill-grid-text-small">
-                                    <p>Ipsum nunc aliquet bibendum enim facilisis. Proin libero nunc consequat interdum
-                                        Vel.</p>
+                                    <p>Design and implement efficient relational databases using <b>MySQL</b></p>
                                 </div>
                             </div>
                         </div>
