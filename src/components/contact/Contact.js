@@ -182,7 +182,7 @@ const Contact = (props) => {
                         </p>
                     </div>
                     <div className="contact-email">
-                        <a href="mailto: webdev@gmail.com">WebDevLabib@gmail.com</a>
+                        <a href="mailto: webdevlabib@gmail.com">WebDevLabib@gmail.com</a>
                     </div>
                     <div className="social-links">
                         <div>
