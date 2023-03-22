@@ -163,8 +163,8 @@ const Projects = (props) => {
                             <div className="project-card-img project-img-2"></div>
                             <div className="project-card-title">
                                 <h3>SolarPowerNow</h3>
-                                <a href="https://github.com/Labibh/SolarPowerNow" target="_blank" rel="noreferrer" className="button-1 repo-button">Repo</a>
-                                <a href="https://labibh.github.io/SolarPowerNow/" target="_blank" rel="noreferrer" className="button-1 live-button">Live</a>
+                                <a href="https://github.com/Labibh/SPNResponsive" target="_blank" rel="noreferrer" className="button-1 repo-button">Repo</a>
+                                <a href="https://labibh.github.io/SPNResponsive/" target="_blank" rel="noreferrer" className="button-1 live-button">Live</a>
                             </div>
                             <div className="project-card-text">
                                 <p className="tech-used-text">Technology used: HTML5, CSS3, JavaScript</p>
