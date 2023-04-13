@@ -59,17 +59,24 @@ const ContactStyled = styled.div`
 
   .social-links {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
     padding: 0 20px 20px 20px;
   }
 
-  .social-links > div {
+  .social-link-text {
     display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 12px;
   }
-
+  
+  .logos {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
   .social-links > div > a {
     margin: 0;
     font-family: var(--font-family-Roboto-Slab);
@@ -153,14 +160,26 @@ const ContactStyled = styled.div`
       height: 100% ;
       border-radius: 15px;
     }
-
     .social-links {
       grid-area: social;
-      width: 65%;
+      grid-template-columns: repeat(6, auto);;
+      grid-column-gap: 15px;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .social-link-text {
+      justify-content: left;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .logos {
+      justify-content: right;
     }
 
     .social-links > div > a {
-      font-size: calc(16px + 0.83vw);
+      font-size: calc(16px + 0.63vw);
     }
     
   }
@@ -185,7 +204,7 @@ const Contact = (props) => {
                         <a href="mailto: webdevlabib@gmail.com">WebDevLabib@gmail.com</a>
                     </div>
                     <div className="social-links">
-                        <div>
+                        <div className="logos">
                             <a href="https://www.linkedin.com/in/labib-haque-42bb98164" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                                     <path fill="#ffffff"
@@ -193,10 +212,10 @@ const Contact = (props) => {
                                 </svg>
                             </a>
                         </div>
-                        <div>
+                        <div className="social-link-text">
                             <a href="https://www.linkedin.com/in/labib-haque-42bb98164" target="_blank" rel="noreferrer">LinkedIn</a>
                         </div>
-                        <div>
+                        <div className="logos">
                             <a href="https://github.com/Labibh" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250">
                                     <path fill="#ffffff"
@@ -204,8 +223,16 @@ const Contact = (props) => {
                                 </svg>
                             </a>
                         </div>
-                        <div>
+                        <div className="social-link-text">
                             <a href="https://github.com/Labibh" target="_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                        <div className="logos">
+                            <a href="https://drive.google.com/file/d/1K4DtqVSxb5aacpwJA-Z5k7qfepjatw--/view?usp=sharing" target="_blank" rel="noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m8 18v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1h8m-4-8a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z"/></svg>
+                            </a>
+                        </div>
+                        <div className="social-link-text">
+                            <a href="https://drive.google.com/file/d/1K4DtqVSxb5aacpwJA-Z5k7qfepjatw--/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
                         </div>
                     </div>
                     <div className="embed-map">
